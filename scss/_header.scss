@@ -1,0 +1,51 @@
+h1 {
+    color: $white;
+    font-size: auto;
+}
+
+.header__nav {
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+
+    .header__logo {
+        display: flex;
+       
+
+        img {
+            width: 60px;
+            padding: 5px;
+        }
+    }
+
+    .header__menu {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        padding: 10px;
+        
+
+        .header__item {
+            padding: center;
+            white-space:nowrap;
+            
+            
+
+            .header__link {
+                color: $white;
+                text-decoration: none;
+                padding: 10px;
+                
+
+                &:hover {
+                    color: rgb(0, 0, 0);
+                    border-radius: 20px;
+                    background-color: rgb(185, 185, 185);
+                }
+            }
+        }
+    }
+}

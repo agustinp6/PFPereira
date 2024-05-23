@@ -1,0 +1,255 @@
+
+h2{
+    color: $black;
+    text-align: center;
+    
+}
+h3 {
+    background-color: rgb(185, 185, 185);
+    margin: 5%;
+    padding: 2%;
+}
+
+
+.container-sobremi {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1.5fr;
+    grid-template-rows: 0.7fr 1.3fr 0.5fr;
+    gap: 10px ;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "sobremi sobremi sobremi"
+        "fotosobremi fotosobremi textosobremi"
+        "fotosobremi fotosobremi textosobremi";
+}
+
+.sobremi {
+    grid-area: sobremi;
+    text-align: center;
+   
+}
+.fotosobremi {
+        grid-area: fotosobremi;
+        margin-left: 5%;
+        
+}
+
+.fotitosobremi {
+            
+            width: 90%;
+            height: auto;
+            
+            
+}
+    
+
+.textosobremi {
+    grid-area: textosobremi;
+    
+    
+  
+
+}
+
+.txtsobremi {
+        width: 80%;
+        height: 80vh;
+        text-align: center;
+        color: $white;
+        font-size: 1.85em;
+        margin-left: 10px;
+        
+    }
+
+
+
+.container-catalogo {
+    display: grid;
+    grid-template-columns: 0.1fr 2.6fr 0.1fr;
+    grid-template-rows: 0.03fr 0.9fr  0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "catalogo catalogo catalogo"
+        "flores flores flores"
+        "lamparas lamparas lamparas"
+        "coronas coronas coronas"
+        "borlas borlas borlas";
+}
+
+.catalogo {
+    grid-area: catalogo;
+    text-align: center;
+    background-color: rgb(185, 185, 185);
+    border-radius: 20px;
+    
+}
+
+.flores {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "florestexto florestexto florestexto"
+        "floresfotos floresfotos floresfotos"
+        "floresfotos floresfotos floresfotos";
+    grid-area: flores;
+}
+
+.florestexto {
+    grid-area: florestexto;
+    text-align: center;
+}
+
+.floresfotos {
+    grid-area: floresfotos;
+    display: flex;
+    flex-direction: row;
+}
+
+.lamparas {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "lamparastexto lamparastexto lamparastexto"
+        "lamparasfotos lamparasfotos lamparasfotos"
+        "lamparasfotos lamparasfotos lamparasfotos";
+    grid-area: lamparas;
+}
+
+.lamparastexto {
+    grid-area: lamparastexto;
+}
+
+.lamparasfotos {
+    grid-area: lamparasfotos;
+    display: flex;
+    flex-direction: row;
+}
+
+.coronas {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "coronastexto coronastexto coronastexto"
+        "coronasfotos coronasfotos coronasfotos"
+        "coronasfotos coronasfotos coronasfotos";
+    grid-area: coronas;
+}
+
+.coronasstexto {
+    grid-area: coronastexto;
+}
+
+.coronasfotos {
+    grid-area: coronasfotos;
+    display: flex;
+    flex-direction: row;
+}
+
+.borlas {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "borlastexto borlastexto borlastexto"
+        "borlasfotos borlasfotos borlasfotos"
+        "borlasfotos borlasfotos borlasfotos";
+    grid-area: borlas;
+    margin-bottom: 100px;
+}
+
+.borlastexto {
+    grid-area: borlastexto;
+}
+
+.borlasfotos {
+    grid-area: borlasfotos;
+    display: flex;
+    flex-direction: row;
+}
+
+.txt-catalogo {
+    text-align: start;
+    font-size: 3em;
+}
+
+.cattxt {
+    color: rgb(0, 0, 0);
+}
+
+.banner-pag3 {
+    width: 40%;
+    height: 80%;
+}
+
+.formtxt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.formulario {
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    .custom-btn{
+        background-color: grey;
+
+        
+    }
+}
+div {
+    margin: 5px;
+}
+
+.fotos {
+    opacity: 0.9;
+    border: double $white 5px;
+    height: 300px;
+    width: 250px;
+}
+
+div .fotos:hover {
+    border-radius: 40px;
+    opacity: 1;
+}
+
+
+.presentacion {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagina {
+    text-decoration: none;
+    color: $white;
+}
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+

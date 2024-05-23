@@ -1,0 +1,176 @@
+
+@media only screen and (min-width: 400px) and (max-width: 1023px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        text-align:justify;
+        font-size: auto;
+        margin-top: 20px   
+    }
+
+   
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+        opacity: 0.9;
+        border: double $white 5px;
+        height: auto;
+        width: 70vw;
+    }
+
+    div .fotos:hover {
+        border-radius: 40px;
+        opacity: 1;
+    }
+
+    .presentacion {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__nav {
+        width: auto;
+        height: auto;
+        margin: 0;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__logo {
+        width: auto;
+        margin-bottom: 20px;
+        display: flex;
+        
+    }
+
+    img {
+        width: 60px;
+        padding: 5px;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: start;
+        padding: 10px;
+        height: 0px;
+        
+    }
+
+    .header__item {
+        padding: auto;
+        text-align: center;
+        justify-content: justify;
+        font-size: 0.80em;
+    }
+
+    .header__link {
+        color: $white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .header__link:hover {
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        background-color: rgb(185, 185, 185);
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+    .banner-pag3 {
+        width: 90vw;
+        height: auto;
+        margin-right: 100px;
+        margin-left: 1px;
+       
+    }
+
+    .footer {
+    margin: 0;
+    padding: 0;
+   
+    
+    margin:  auto;
+    
+    
+    font-size: 10px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .floresfotos {
+        grid-area: floresfotos;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lamparasfotos {
+        grid-area: lamparasfotos;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .borlasfotos {
+        grid-area: borlasfotos;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coronasfotos {
+        grid-area: coronasfotos;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+     
+      .fotosobremi{ 
+        grid-area: fotosobremi;
+        margin-left: auto;
+    }
+    .fotitosobremi{
+        width: 100%;
+        height: auto;
+    }
+      
+      .textosobremi{ 
+        grid-area: textosobremi;    
+    }
+    .txtsobremi{
+        width: 80%;
+        height: auto;
+        text-align: justify;
+        color: white;
+        font-size: 90%;   
+    }
+    .catalogo {
+        grid-area: flex;
+        text-align: center;
+        background-color: rgb(185, 185, 185);
+        border-radius: 0px;
+        height: auto;
+    }
+
+    
+}
