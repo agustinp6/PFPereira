@@ -7,59 +7,62 @@ h2{
 h3 {
     background-color: rgb(185, 185, 185);
     margin: 5%;
-    padding: 2%;
+    padding: auto;
+    text-align: center;
+    margin-left: 50px;
+    
 }
 
 
 .container-sobremi {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1.5fr;
-    grid-template-rows: 0.7fr 1.3fr 0.5fr;
+    grid-template-rows: 0.1fr 1.3fr 0.5fr;
     gap: 10px ;
     grid-auto-flow: row;
     grid-template-areas:
         "sobremi sobremi sobremi"
         "fotosobremi fotosobremi textosobremi"
         "fotosobremi fotosobremi textosobremi";
-}
 
-.sobremi {
-    grid-area: sobremi;
-    text-align: center;
-   
-}
-.fotosobremi {
-        grid-area: fotosobremi;
-        margin-left: 5%;
-        
-}
 
-.fotitosobremi {
-            
-            width: 90%;
-            height: auto;
-            
-            
-}
-    
-
-.textosobremi {
-    grid-area: textosobremi;
-    
-    
-  
-
-}
-
-.txtsobremi {
-        width: 80%;
-        height: 80vh;
+    .sobremi {
+        grid-area: sobremi;
         text-align: center;
-        color: $white;
-        font-size: 1.85em;
-        margin-left: 10px;
+   
+
+        .fotosobremi {
+            grid-area: fotosobremi;
+            margin-left: 5%;
         
+
+
+            .fotitosobremi {
+            
+                width: 90%;
+                height: auto;
+            }
+        }
+            
+        
+    .textosobremi {
+        grid-area: textosobremi;
+    
+    
+        .txtsobremi {
+            width: 80%;
+            height: 65vh;
+            text-align: center;
+            color: $white;
+            font-size: 1.85em;
+            margin-left: 50px;               
+            }
+        }
     }
+}
+        
+        
+    
 
 
 
@@ -75,14 +78,24 @@ h3 {
         "lamparas lamparas lamparas"
         "coronas coronas coronas"
         "borlas borlas borlas";
-}
 
-.catalogo {
-    grid-area: catalogo;
-    text-align: center;
-    background-color: rgb(185, 185, 185);
-    border-radius: 20px;
-    
+
+    .catalogo {
+        grid-area: catalogo;
+        text-align: center;
+        background-color: rgb(185, 185, 185);
+        border-radius: 20px;
+
+        .txt-catalogo {
+            text-align: start;
+            font-size: 3em;
+        
+        
+            .cattxt {
+                color: rgb(0, 0, 0);
+            }
+        }
+    }   
 }
 
 .flores {
@@ -96,17 +109,19 @@ h3 {
         "floresfotos floresfotos floresfotos"
         "floresfotos floresfotos floresfotos";
     grid-area: flores;
-}
 
-.florestexto {
-    grid-area: florestexto;
-    text-align: center;
-}
 
-.floresfotos {
-    grid-area: floresfotos;
-    display: flex;
-    flex-direction: row;
+    .florestexto {
+        grid-area: florestexto;
+        text-align: center;
+
+
+        .floresfotos {
+            grid-area: floresfotos;
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 
 .lamparas {
@@ -120,16 +135,18 @@ h3 {
         "lamparasfotos lamparasfotos lamparasfotos"
         "lamparasfotos lamparasfotos lamparasfotos";
     grid-area: lamparas;
-}
 
-.lamparastexto {
-    grid-area: lamparastexto;
-}
 
-.lamparasfotos {
-    grid-area: lamparasfotos;
-    display: flex;
-    flex-direction: row;
+    .lamparastexto {
+        grid-area: lamparastexto;
+
+
+        .lamparasfotos {
+            grid-area: lamparasfotos;
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 
 .coronas {
@@ -143,16 +160,18 @@ h3 {
         "coronasfotos coronasfotos coronasfotos"
         "coronasfotos coronasfotos coronasfotos";
     grid-area: coronas;
-}
 
-.coronasstexto {
-    grid-area: coronastexto;
-}
 
-.coronasfotos {
-    grid-area: coronasfotos;
-    display: flex;
-    flex-direction: row;
+    .coronasstexto {
+        grid-area: coronastexto;
+
+
+        .coronasfotos {
+            grid-area: coronasfotos;
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 
 .borlas {
@@ -167,30 +186,23 @@ h3 {
         "borlasfotos borlasfotos borlasfotos";
     grid-area: borlas;
     margin-bottom: 100px;
-}
 
-.borlastexto {
-    grid-area: borlastexto;
-}
 
-.borlasfotos {
-    grid-area: borlasfotos;
-    display: flex;
-    flex-direction: row;
-}
+    .borlastexto {
+         grid-area: borlastexto;
 
-.txt-catalogo {
-    text-align: start;
-    font-size: 3em;
-}
 
-.cattxt {
-    color: rgb(0, 0, 0);
+        .borlasfotos {
+            grid-area: borlasfotos;
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 
 .banner-pag3 {
-    width: 40%;
-    height: 80%;
+    width: 80%;
+    height: auto;
 }
 
 .formtxt {
@@ -207,12 +219,14 @@ h3 {
     text-align: center;
     justify-content: center;
 
+
     .custom-btn{
         background-color: grey;
-
-        
     }
 }
+    
+
+
 div {
     margin: 5px;
 }
@@ -222,11 +236,11 @@ div {
     border: double $white 5px;
     height: 300px;
     width: 250px;
-}
 
-div .fotos:hover {
-    border-radius: 40px;
-    opacity: 1;
+    div .fotos:hover {
+        border-radius: 40px;
+        opacity: 1;
+    }
 }
 
 

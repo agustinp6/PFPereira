@@ -13,44 +13,41 @@ h2 {
 h3 {
   background-color: rgb(185, 185, 185);
   margin: 5%;
-  padding: 2%;
+  padding: auto;
+  text-align: center;
+  margin-left: 50px;
 }
 
 .container-sobremi {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1.5fr;
-  grid-template-rows: 0.7fr 1.3fr 0.5fr;
+  grid-template-rows: 0.1fr 1.3fr 0.5fr;
   gap: 10px;
   grid-auto-flow: row;
   grid-template-areas: "sobremi sobremi sobremi" "fotosobremi fotosobremi textosobremi" "fotosobremi fotosobremi textosobremi";
 }
-
-.sobremi {
+.container-sobremi .sobremi {
   grid-area: sobremi;
   text-align: center;
 }
-
-.fotosobremi {
+.container-sobremi .sobremi .fotosobremi {
   grid-area: fotosobremi;
   margin-left: 5%;
 }
-
-.fotitosobremi {
+.container-sobremi .sobremi .fotosobremi .fotitosobremi {
   width: 90%;
   height: auto;
 }
-
-.textosobremi {
+.container-sobremi .sobremi .textosobremi {
   grid-area: textosobremi;
 }
-
-.txtsobremi {
+.container-sobremi .sobremi .textosobremi .txtsobremi {
   width: 80%;
-  height: 80vh;
+  height: 65vh;
   text-align: center;
   color: white;
   font-size: 1.85em;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .container-catalogo {
@@ -61,12 +58,18 @@ h3 {
   grid-auto-flow: row;
   grid-template-areas: "catalogo catalogo catalogo" "flores flores flores" "lamparas lamparas lamparas" "coronas coronas coronas" "borlas borlas borlas";
 }
-
-.catalogo {
+.container-catalogo .catalogo {
   grid-area: catalogo;
   text-align: center;
   background-color: rgb(185, 185, 185);
   border-radius: 20px;
+}
+.container-catalogo .catalogo .txt-catalogo {
+  text-align: start;
+  font-size: 3em;
+}
+.container-catalogo .catalogo .txt-catalogo .cattxt {
+  color: rgb(0, 0, 0);
 }
 
 .flores {
@@ -78,13 +81,11 @@ h3 {
   grid-template-areas: "florestexto florestexto florestexto" "floresfotos floresfotos floresfotos" "floresfotos floresfotos floresfotos";
   grid-area: flores;
 }
-
-.florestexto {
+.flores .florestexto {
   grid-area: florestexto;
   text-align: center;
 }
-
-.floresfotos {
+.flores .florestexto .floresfotos {
   grid-area: floresfotos;
   display: flex;
   flex-direction: row;
@@ -99,12 +100,10 @@ h3 {
   grid-template-areas: "lamparastexto lamparastexto lamparastexto" "lamparasfotos lamparasfotos lamparasfotos" "lamparasfotos lamparasfotos lamparasfotos";
   grid-area: lamparas;
 }
-
-.lamparastexto {
+.lamparas .lamparastexto {
   grid-area: lamparastexto;
 }
-
-.lamparasfotos {
+.lamparas .lamparastexto .lamparasfotos {
   grid-area: lamparasfotos;
   display: flex;
   flex-direction: row;
@@ -119,12 +118,10 @@ h3 {
   grid-template-areas: "coronastexto coronastexto coronastexto" "coronasfotos coronasfotos coronasfotos" "coronasfotos coronasfotos coronasfotos";
   grid-area: coronas;
 }
-
-.coronasstexto {
+.coronas .coronasstexto {
   grid-area: coronastexto;
 }
-
-.coronasfotos {
+.coronas .coronasstexto .coronasfotos {
   grid-area: coronasfotos;
   display: flex;
   flex-direction: row;
@@ -140,29 +137,18 @@ h3 {
   grid-area: borlas;
   margin-bottom: 100px;
 }
-
-.borlastexto {
+.borlas .borlastexto {
   grid-area: borlastexto;
 }
-
-.borlasfotos {
+.borlas .borlastexto .borlasfotos {
   grid-area: borlasfotos;
   display: flex;
   flex-direction: row;
 }
 
-.txt-catalogo {
-  text-align: start;
-  font-size: 3em;
-}
-
-.cattxt {
-  color: rgb(0, 0, 0);
-}
-
 .banner-pag3 {
-  width: 40%;
-  height: 80%;
+  width: 80%;
+  height: auto;
 }
 
 .formtxt {
@@ -193,8 +179,7 @@ div {
   height: 300px;
   width: 250px;
 }
-
-div .fotos:hover {
+.fotos div .fotos:hover {
   border-radius: 40px;
   opacity: 1;
 }
@@ -292,6 +277,13 @@ h1 {
     font-size: auto;
     margin-top: 20px;
   }
+  h3 {
+    background-color: rgb(185, 185, 185);
+    margin: 5%;
+    padding: auto;
+    text-align: center;
+    margin-left: 45px;
+  }
   .fotos {
     display: flex;
     flex-direction: column;
@@ -300,7 +292,7 @@ h1 {
     height: auto;
     width: 70vw;
   }
-  div .fotos:hover {
+  .fotos div .fotos:hover {
     border-radius: 40px;
     opacity: 1;
   }
@@ -320,16 +312,16 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-  .header__logo {
+  .header__nav .header__logo {
     width: auto;
     margin-bottom: 20px;
     display: flex;
   }
-  img {
+  .header__nav .header__logo img {
     width: 60px;
-    padding: 5px;
+    padding: 4px;
   }
-  .header__menu {
+  .header__nav .header__menu {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -337,18 +329,18 @@ h1 {
     padding: 10px;
     height: 0px;
   }
-  .header__item {
+  .header__nav .header__menu .header__item {
     padding: auto;
     text-align: center;
     justify-content: justify;
     font-size: 0.8em;
   }
-  .header__link {
+  .header__nav .header__menu .header__item .header__link {
     color: white;
     text-decoration: none;
     padding: 10px;
   }
-  .header__link:hover {
+  .header__nav .header__menu .header__item .header__link .header__link:hover {
     color: rgb(0, 0, 0);
     border-radius: 20px;
     background-color: rgb(185, 185, 185);
@@ -360,7 +352,7 @@ h1 {
     width: 90vw;
     height: auto;
     margin-right: 100px;
-    margin-left: 1px;
+    margin-left: 10px;
   }
   .footer {
     margin: 0;
@@ -377,17 +369,17 @@ h1 {
     display: flex;
     flex-direction: column;
   }
-  .lamparasfotos {
+  .floresfotos .lamparasfotos {
     grid-area: lamparasfotos;
     display: flex;
     flex-direction: column;
   }
-  .borlasfotos {
+  .floresfotos .lamparasfotos .borlasfotos {
     grid-area: borlasfotos;
     display: flex;
     flex-direction: column;
   }
-  .coronasfotos {
+  .floresfotos .lamparasfotos .borlasfotos .coronasfotos {
     grid-area: coronasfotos;
     display: flex;
     flex-direction: column;
@@ -396,22 +388,22 @@ h1 {
     grid-area: fotosobremi;
     margin-left: auto;
   }
-  .fotitosobremi {
+  .fotosobremi .fotitosobremi {
     width: 100%;
-    height: auto;
+    height: 70%;
   }
   .textosobremi {
-    grid-area: textosobremi;
+    grid-area: inherit;
   }
-  .txtsobremi {
-    width: 80%;
+  .textosobremi .txtsobremi {
+    width: auto;
     height: auto;
     text-align: justify;
     color: white;
     font-size: 90%;
   }
   .catalogo {
-    grid-area: flex;
+    grid-area: catalogo;
     text-align: center;
     background-color: rgb(185, 185, 185);
     border-radius: 0px;

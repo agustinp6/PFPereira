@@ -17,7 +17,13 @@
         margin-top: 20px   
     }
 
-   
+    h3 {
+        background-color: rgb(185, 185, 185);
+        margin: 5%;
+        padding: auto;
+        text-align: center;
+        margin-left: 45px;
+    }
 
     .fotos {
         display: flex;
@@ -26,11 +32,13 @@
         border: double $white 5px;
         height: auto;
         width: 70vw;
-    }
+        
+    
 
-    div .fotos:hover {
-        border-radius: 40px;
-        opacity: 1;
+        div .fotos:hover {
+            border-radius: 40px;
+            opacity: 1;
+        }
     }
 
     .presentacion {
@@ -49,47 +57,53 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
+    
 
-    .header__logo {
-        width: auto;
-        margin-bottom: 20px;
-        display: flex;
+        .header__logo {
+            width: auto;
+            margin-bottom: 20px;
+            display: flex;
         
-    }
+    
 
-    img {
-        width: 60px;
-        padding: 5px;
-    }
+            img {
+            width: 60px;
+            padding: 4px;
+            }
+        }
+    
 
-    .header__menu {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        align-items: start;
-        padding: 10px;
-        height: 0px;
+        .header__menu {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-items: start;
+            padding: 10px;
+            height: 0px;
         
-    }
+    
 
-    .header__item {
-        padding: auto;
-        text-align: center;
-        justify-content: justify;
-        font-size: 0.80em;
-    }
+            .header__item {
+                padding: auto;
+                text-align: center;
+                justify-content: justify;
+                font-size: 0.80em;
+    
 
-    .header__link {
-        color: $white;
-        text-decoration: none;
-        padding: 10px;
-    }
+                .header__link {
+                    color: $white;
+                    text-decoration: none;
+                    padding: 10px;
+    
 
-    .header__link:hover {
-        color: rgb(0, 0, 0);
-        border-radius: 20px;
-        background-color: rgb(185, 185, 185);
+                    .header__link:hover {
+                        color: rgb(0, 0, 0);
+                        border-radius: 20px;
+                        background-color: rgb(185, 185, 185);
+                    }
+                }
+            }
+        }
     }
 
     .copyright {
@@ -100,18 +114,14 @@
         width: 90vw;
         height: auto;
         margin-right: 100px;
-        margin-left: 1px;
+        margin-left: 10px;
        
     }
 
     .footer {
     margin: 0;
-    padding: 0;
-   
-    
+    padding: 0; 
     margin:  auto;
-    
-    
     font-size: 10px;
     display: flex;
     list-style: none;
@@ -123,54 +133,66 @@
         grid-area: floresfotos;
         display: flex;
         flex-direction: column;
-    }
+        
+        
+    
 
-    .lamparasfotos {
-        grid-area: lamparasfotos;
-        display: flex;
-        flex-direction: column;
-    }
+        .lamparasfotos {
+            grid-area: lamparasfotos;
+            display: flex;
+            flex-direction: column;
+        
+    
 
-    .borlasfotos {
-        grid-area: borlasfotos;
-        display: flex;
-        flex-direction: column;
-    }
+            .borlasfotos {
+                grid-area: borlasfotos;
+                display: flex;
+                flex-direction: column;
+        
+    
 
-    .coronasfotos {
-        grid-area: coronasfotos;
-        display: flex;
-        flex-direction: column;
+                .coronasfotos {
+                    grid-area: coronasfotos;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }    
     }
 
     
      
-      .fotosobremi{ 
+    .fotosobremi{ 
         grid-area: fotosobremi;
         margin-left: auto;
-    }
-    .fotitosobremi{
-        width: 100%;
-        height: auto;
+    
+        .fotitosobremi{
+            width: 100%;
+            height: 70%;
+        }
+        
     }
       
-      .textosobremi{ 
-        grid-area: textosobremi;    
-    }
-    .txtsobremi{
-        width: 80%;
-        height: auto;
-        text-align: justify;
-        color: white;
-        font-size: 90%;   
+    .textosobremi{ 
+        grid-area:inherit;    
+    
+        .txtsobremi{
+            width: auto;
+            height: auto;
+            text-align: justify;
+            color: white;
+            font-size: 90%;
+        }   
     }
     .catalogo {
-        grid-area: flex;
+        grid-area: catalogo;
         text-align: center;
         background-color: rgb(185, 185, 185);
         border-radius: 0px;
         height: auto;
     }
+
+   
 
     
 }
