@@ -218,12 +218,34 @@ h3 {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    overflow: hidden;
 
 
     .custom-btn{
         background-color: grey;
+        
     }
 }
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(70px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.form{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    animation: mover 3s infinite;
+    
+} 
     
 
 
